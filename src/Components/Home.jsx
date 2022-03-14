@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
-import img from '../Assets/BackgroundCity.svg';
+import img from '../Assets/background.jpg';
 
 const Container = styled.div`
+    display: block;
     min-height: 100vh;
     background: url(${img});
     background-size: cover;
