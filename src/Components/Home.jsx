@@ -1,7 +1,11 @@
 import React from 'react'
 import styled from 'styled-components';
+import img from '../Assets/BackgroundCity.svg';
+
 const Container = styled.div`
-    background-img: url(../../Assets/BackgroundCity.svg);
+    min-height: 100vh;
+    background: url(${img});
+    background-size: cover;
     
 `;
 
