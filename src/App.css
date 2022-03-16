@@ -4,7 +4,7 @@
     padding: 0px;
     font-family: 'Concert One', cursive;
   font-family: 'Staatliches', cursive;
-  
+  scroll-behavior: smooth;
   }
   
   @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Staatliches&display=swap');
