@@ -24,6 +24,7 @@ const Skills = () => {
   return (
     <Container id = "Skills">
         
+       
         <Wrapper>
         <Title>Skills & Experience</Title>
         <Description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quaerat ad mollitia blanditiis voluptates pariatur harum officia quae earum hic aliquid, laboriosam at, ut iusto id quasi magnam similique? Exercitationem.</Description>
