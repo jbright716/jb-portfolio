@@ -7,8 +7,7 @@ export const projects = [
         difficulties: "",
         features: "",
         technologies: "JavaFx, Java, Css",
-        code: "",
-        link: "",
+        repo: "https://github.com/jbright716/Virtual-Casino-",
         demo: "https://i.imgur.com/QRTcYWA.png"
     },
     {
@@ -19,8 +18,7 @@ export const projects = [
         difficulties: "",
         features: "",
         technologies: "React, Node, Express, MongoDB",
-        code: "",
-        link: "",
+        repo: "https://github.com/jbright716/VulgarTG",
         demo: "https://i.imgur.com/aIwDiXL.png"
     },
     {
@@ -31,9 +29,8 @@ export const projects = [
         difficulties: "",
         features: "",
         technologies: "",
-        code: "",
-        link: "",
-        demo: ""
+        repo: "https://github.com/jbright716/VulgarTG",
+        demo: "https://plopdo.com/wp-content/uploads/2021/10/backend-is-1024x689.png"
     }, 
     {
         id: '4',
@@ -43,8 +40,7 @@ export const projects = [
         difficulties: "",
         features: "",
         technologies: "",
-        code: "",
-        link: "",
+        repo: "https://github.com/jbright716/jb-portfolio",
         demo: "https://i.imgur.com/NEa4uxC.png"
     }
 ]

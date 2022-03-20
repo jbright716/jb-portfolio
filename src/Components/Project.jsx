@@ -1,3 +1,4 @@
+import { WindowRounded } from '@mui/icons-material';
 import React, {useState} from 'react'
 import styled from 'styled-components';
 import Modal from './Modal';
@@ -44,8 +45,9 @@ font-size: 2.25em;
 const Description = styled.p``;
 const Technologies = styled.p`
     font-size: 1.75em;
+    
 `;
-const Button = styled.button`
+const Button = styled.a`
     width: 7rem;
     padding: 0.75em 0em;
    border-width: 5px;
@@ -55,7 +57,7 @@ const Button = styled.button`
     background: none;
     color: #DE887A;
     transition: 0.5s ease;
-
+    text-decoration:none;
     font-size: 1.25em;
     &: hover{
     background: #DE887A;
@@ -73,6 +75,10 @@ const Project = ({item}) => {
     const openModal = () => {
         setShowModal(prev => !prev)
     }
+
+    const link = (mylink) => {
+        window.open(mylink);
+    }
   return (
     <Container flip = {item.id % 2 === 0 ? 'row' : 'row-reverse'} >
         
@@ -87,7 +93,7 @@ const Project = ({item}) => {
         <Description>{item.description}</Description>
         <Button onClick={openModal} >View Site</Button>
         <Modal showModal = {showModal} setShowModal={setShowModal}/>
-        <Button>View Code</Button>
+        <Button href={item.repo}>View Code</Button>
         </Info>
     </Container>
   )

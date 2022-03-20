@@ -19,7 +19,7 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-padding: 1em 4em;
+padding: 0.5em 4em;
 width: 100%;
 display: flex;
 justify-content: space-between;
