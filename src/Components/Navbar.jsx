@@ -41,7 +41,7 @@ gap: 3em;
 const TabItems = styled.li`
 list-style-type: none;
 &:hover {
-  border-bottom: 3px solid grey;
+  border-bottom: 3px solid #455E80;
 }
 `;
 

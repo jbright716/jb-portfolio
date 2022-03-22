@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -37,7 +38,7 @@ const Input = styled.input`
 
   color: #152039;
   width: 80%;
-  font-size: 1.25em;
+  padding: 0.5em;
 `;
 
 const ContactMsg = styled.input`
@@ -50,7 +51,23 @@ const Label = styled.label`
     font-size: 1.25em;
 `;
 const Button = styled.button`
-font-size: 1em;
+    font-size: 1em;
+    width: 7rem;
+    padding: 0.75em 0em;
+   border-width: 10px;
+   border: solid;
+   border-color: white;
+   border-radius: 5%;
+    background: none;
+    color: white;
+    transition: 0.5s ease;
+    text-decoration:none;
+    font-size: 1.25em;
+    &: hover{
+    background: white;
+    color: #DE887A;
+    }
+
 `;
 
 const Row = styled.div`
@@ -65,40 +82,49 @@ const CTA = styled.h1`
 `;
 const Header = styled.h2``;
 const Contact = () => {
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_6wzifyt', 'template_uwqtk5a', e.target, 'rj1ZPXxfS6YN0b96-').then(res => {
+            console.log(res);
+        }).catch(
+            err => console.log(err));
+        }
+    
   return (
-    <Container>
+    <Container id = "Contact">
     <CTA>Like What You See?</CTA>
     <Header>
     Do not hesitate to contact me to discuss a possible project or learn more about my work.
     </Header>
-    <Form>
+    <Form  onSubmit={sendEmail}>
 
     <Row>
     <Wrapper>
         <Label for = "first" >First *</Label>
-        <Input required id ="first" type="text" />
+        <Input required id ="first" name ="first" type="text" />
     </Wrapper>
    
     <Wrapper>
         <Label for = "last" >Last *</Label>
-        <Input id ="last" type="text" />
+        <Input id ="last" name= "last" type="text" />
     </Wrapper>
     </Row>
     <Row>
     <Wrapper>
         <Label for = "email" >Email *</Label>
-        <Input required id ="email" type="email"/>
+        <Input required id ="email" name = "email" type="email"/>
     </Wrapper>
     <Wrapper>
         <Label for = "number" >Number</Label>
-        <Input id ="number" type="text"/>
+        <Input id ="number" name = "number" type="text"/>
     </Wrapper>
     </Row>
     
     
     <Wrapper>
         <Label for = "message">Message</Label>
-        <ContactMsg required id = "message" type= "text"/>
+        <ContactMsg required id = "message" name = "message" type= "text"/>
     </Wrapper>
 
     <Wrapper>

@@ -12,7 +12,7 @@ const Container = styled.div`
     background-position: center;
     background-size: cover;
     position: relative;
-    z-index: -1;
+   
 `;
 
 const Wrapper = styled.div`
@@ -35,16 +35,15 @@ font-size: 2.5em;
 const Image = styled.img`
     position: absolute;
     width: 100vw;
-    z-index: -1;
+    
     bottom: 0;
 `;
 const Links = styled.div`
 display: flex;
 flex-direction: column;
 position: absolute;
-bottom 5%;
+bottom 4%;
 right: 5%;
-
 
 `;
 
@@ -53,15 +52,18 @@ const Link = styled.a`
 text-decoration: none;
 color: white;
 
+&:hover {
+    color: #455E80;
+}
 `;
 const Home = () => {
   return (
     <Container id = "Home">
     <Links>
-        <Link >
+        <Link href = "https://linkedin.com/in/justicebright716">
             <LinkedIn style={{ fontSize: 50 }}/>
         </Link>
-        <Link>
+        <Link href = "https://github.com/jbright716">
             <GitHub style={{ fontSize: 50 }}/>
         </Link>
        

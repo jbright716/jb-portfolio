@@ -5,7 +5,7 @@ import Modal from './Modal';
 
 const Container = styled.div`
 display: flex;
-height: 65vh;
+
 width: 90vw;
 flex-direction: ${({flip}) => flip};
 align-items: center;
@@ -45,9 +45,10 @@ font-size: 2.25em;
 const Description = styled.p``;
 const Technologies = styled.p`
     font-size: 1.75em;
-    
+    color: #455E80;
 `;
 const Button = styled.a`
+    display: ${({showing}) => showing};
     width: 7rem;
     padding: 0.75em 0em;
    border-width: 5px;
@@ -91,7 +92,8 @@ const Project = ({item}) => {
         <Technologies>{item.technologies}</Technologies>
         <Title>{item.title}</Title>
         <Description>{item.description}</Description>
-        <Button onClick={openModal} >View Site</Button>
+        
+        <Button onClick={openModal} showing = {item.show? 'block' : 'none' } >{item.button}</Button>
         <Modal showModal = {showModal} setShowModal={setShowModal}/>
         <Button href={item.repo}>View Code</Button>
         </Info>
