@@ -2,22 +2,25 @@ export const projects = [
     {
         id: '1',
         title: "Virtual Casino",
-        description: "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
+        description: "A desktop app for developing and testing gambling strategies. Featured Tables Games (BlackJack, Roulette and Poker), a Slot Machine, and a balance tracking system. Developed tracking system for players statistics used to analyze betting strategies.",
         button: "View Demo",
         show: true,
         technologies: "JavaFx, Java, Css",
         repo: "https://github.com/jbright716/Virtual-Casino-",
-        demo: "https://i.imgur.com/QRTcYWA.png"
+        demo: "https://i.imgur.com/QRTcYWA.png",
+        linked: false
     },
     {
         id: '2',
         title: "VulgarTG",
-        description: "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
+        description: "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more. *Live Site Not Currently Lauched*",
         button: "View Site",
         show: true,
         technologies: "React, Node, Express, PostgreSQL",
         repo: "https://github.com/jbright716/VulgarTG",
-        demo: "https://i.imgur.com/aIwDiXL.png"
+        demo: "https://i.imgur.com/aIwDiXL.png",
+        linked: true,
+        link: "https://vulgartg.com"
     },
     {
         id: '3',
@@ -32,11 +35,13 @@ export const projects = [
     {
         id: '4',
         title: "Personal Portfolio",
-        description: "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
+        description: "A personal website for",
         button: "View Site",
         show: true,
         technologies: "React, HTML, CSS",
         repo: "https://github.com/jbright716/jb-portfolio",
-        demo: "https://i.imgur.com/NEa4uxC.png"
+        demo: "https://i.imgur.com/NEa4uxC.png",
+        linked: true,
+        link: "https://justicebright.com"
     }
 ]

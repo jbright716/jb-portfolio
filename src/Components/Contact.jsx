@@ -50,6 +50,9 @@ const ContactMsg = styled.input`
 const Label = styled.label`
     font-size: 1.25em;
 `;
+const Sign = styled.p`
+    font-size: 0.85em;
+`;
 const Button = styled.button`
     font-size: 1em;
     width: 7rem;
@@ -131,7 +134,7 @@ const Contact = () => {
     <Button>Send Message</Button>
     </Wrapper>
     </Form>
-    
+    <Sign>Designed and developed by Justice Bright. © 2022 All rights reserved</Sign>
     </Container>
   )
 }

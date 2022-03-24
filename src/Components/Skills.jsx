@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react';
 import styled from 'styled-components';
-import img from '../Assets/Jbrightski.png'
-import {tech} from '../JSFiles/technology'
+import img from '../Assets/Jbrightski.png';
+import {tech} from '../JSFiles/technology';
+import resume from '../Assets/JusticeBrightResume.pdf';
+
 const Container = styled.div`
     height: 100vh;
     background: #152039;
@@ -41,7 +43,7 @@ const Logo = styled.img`
     transform: scale(1.25);
   }
 `;
-const Button = styled.button`
+const Button = styled.a`
   width: 7rem;
   padding: 0.75em 0em;
   border-width: 5px;
@@ -59,6 +61,7 @@ const Button = styled.button`
 `;
 
 const Skills = () => {
+  
   return (
     <Container id = "Skills">
         
@@ -66,7 +69,8 @@ const Skills = () => {
         <Wrapper>
         <Title>About Me</Title>
         <Description> &emsp;Hello! My name is Justice, I am an extremely creative and self-motivated individual with a serious passion for utilizing technology to solve real world problems. I possess a diverse set of skills ranging from creating savvy web and desktop applications to indie game Development.</Description>
-        <Button>View Resume</Button>
+        <Button href= {resume} >View Resume</Button>
+
         <Tech>
         {tech.map(item => (
            <Logo src={item.image}/>
