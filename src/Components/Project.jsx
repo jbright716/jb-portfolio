@@ -1,15 +1,21 @@
 import React, {useState} from 'react'
 import styled from 'styled-components';
 import Modal from './Modal';
-
+import {PC, Medium, mobile} from '../responsive';
 const Container = styled.div`
-display: flex;
 
+display: flex;
 width: 90vw;
 flex-direction: ${({flip}) => flip};
 align-items: center;
-position: relative;
-margin: 1.5em;
+
+${PC({
+    margin: "1.5em",
+    position: "relative",
+    width: "90vw"
+ })}
+
+
 overflow: hidden;
 transition: all 0.5s ease;
 
@@ -20,6 +26,15 @@ transition: all 0.5s ease;
 & .right{
     margin-right: -100px;
 }
+${mobile({
+    flexDirection: "column",
+    margin: "0"
+ })}
+
+${Medium({
+    flexDirection: "column",
+    margin: "0"
+ })}
 `;
 const Demo = styled.div`
 flex: 1.15;
@@ -27,26 +42,38 @@ flex: 1.15;
 const Info = styled.div`
 background: #152039;
 padding-bottom: 1em;
-height: 75%;
-position relative;
+position: relative;
 flex: 1;
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: space-between;
+justify-content: center;
 gap: 1em;
+
+${PC({
+    margin: "1.5em",
+    jusifyContent: "space-between"
+ })}
 `;
 const Image = styled.img`width: 100%`;
 const Title = styled.h1`
 color: #DE887A;
 font-size: 2.25em;
+
 `;
 const Description = styled.p`
-    padding: 0em 2em;
+
+
+${PC({
+    padding: "0 2em"
+    
+ })}
+    
 `;
 const Technologies = styled.p`
     font-size: 1.75em;
     color: #455E80;
+    ;
 `;
 const Button = styled.a`
     display: ${({showing}) => showing};
@@ -78,12 +105,9 @@ const Project = ({item}) => {
         setShowModal(prev => !prev)
     }
 
-    const link = (mylink) => {
-        window.open(mylink);
-    }
+    
 
-const ksk = <>hi</>;
-const jsl = <>bye</>;
+
   return (
     <Container flip = {item.id % 2 === 0 ? 'row' : 'row-reverse'} >
         

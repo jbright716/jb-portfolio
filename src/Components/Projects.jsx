@@ -3,6 +3,7 @@ import React from 'react'
 import styled from 'styled-components';
 import {projects} from '../JSFiles/projectDetails.js'
 import Project from './Project';
+import {PC, Medium} from '../responsive';
 const Container = styled.div`
     background: #152039;
     display: flex;
@@ -11,10 +12,17 @@ const Container = styled.div`
     justify-content: center;
     color: #fff;
     text-align: center;
-    
+    padding: 1em 0;
 `;
 const Title = styled.h1`
-    font-size: 5em;
+  font-size: 3em;
+
+  ${Medium({
+      fontSize: "4em"
+  })}
+  ${PC({
+    fontSize: "5em"
+  })}
 `;
 const List = styled.div`
 display: flex;

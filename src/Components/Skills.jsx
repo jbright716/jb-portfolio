@@ -1,11 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import img from '../Assets/Jbrightski.png';
 import {tech} from '../JSFiles/technology';
 import resume from '../Assets/JusticeBrightResume.pdf';
+import {PC, Medium,mobile} from '../responsive';
 
 const Container = styled.div`
-    height: 100vh;
+    padding: 1em 0;
     background: #152039;
     display: flex;
     align-items: center;
@@ -13,14 +14,31 @@ const Container = styled.div`
     gap: 5em;
     color: #fff;
     text-align: center;
+
+    ${mobile({
+      flexDirection: "column"
+    })}
+
 `;
 const Title = styled.h1`
-    font-size: 5em;
+    font-size: 3em;
+
+
+  ${Medium({
+      fontSize: "4em"
+   })}
+  ${PC({
+    fontSize: "5em"
+  })}
     
 `;
 const Description = styled.p`
     font-size: 1.25em;
-    width: 50vw;
+    width: 85vw;
+
+    ${Medium({
+      width: "50vw"
+      })}
 `;
 
 const Wrapper = styled.div`
@@ -31,14 +49,26 @@ const Wrapper = styled.div`
 `;
 const Tech = styled.div`
   display: flex;
+  align-items: center;
+  jusify-content: center;
   gap: 1em;
+  flex-wrap: wrap;
 `;
 const Image = styled.img`
+
+
+${mobile({
+  display: "none"
+})}
+${Medium({
+width: "250px"
+})}
 `;
 const Logo = styled.img`
   width: 50px;
+  
   transition: all 0.5s ease;
-
+  
   &: hover {
     transform: scale(1.25);
   }
