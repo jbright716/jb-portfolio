@@ -6,10 +6,6 @@ import Project from './Project';
 import {PC, Medium} from '../responsive';
 const Container = styled.div`
     background: #152039;
-    display: flex;
-    flex-direction: verticle;
-    align-items: center;
-    justify-content: center;
     color: #fff;
     text-align: center;
     padding: 1em 0;
@@ -27,9 +23,16 @@ const Title = styled.h1`
 const List = styled.div`
 display: flex;
 flex-direction: column;
+
 `;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 1em; 
+    align-items: center;
+    justify-content: center;  
+`;
 const Projects = () => {
   return (
     <Container >

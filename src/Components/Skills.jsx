@@ -34,8 +34,10 @@ const Title = styled.h1`
 `;
 const Description = styled.p`
     font-size: 1.25em;
-    width: 85vw;
-
+  
+    ${mobile({
+      width: "85vw"
+      })}
     ${Medium({
       width: "50vw"
       })}

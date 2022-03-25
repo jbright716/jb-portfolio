@@ -1,6 +1,7 @@
 import React from 'react';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
+import {PC, Medium, mobile} from '../responsive';
 
 const Container = styled.div`
 background: #152039;
@@ -23,7 +24,7 @@ const Wrapper = styled.div`
 `;
 
 const Form = styled.form`
-    width: 50%;
+    width: 90%;
     background: #DE887A;
     display: flex; 
     flex-direction: column;
@@ -32,18 +33,26 @@ const Form = styled.form`
     border: solid;
     border-width: 10px;
     border-color: white;
-    
+     
+    ${PC({
+        width: "50%"
+    })}
 `;
 const Input = styled.input`
 
   color: #152039;
-  width: 80%;
+  width: 90%;
   padding: 0.5em;
 `;
 
 const ContactMsg = styled.input`
-  height: 10rem;
+  font-size: 1.05em;
   width: 80%;
+  padding: 1rem 1rem 7.5rem 1rem;
+  
+  ${mobile({
+    width: "100%"
+})}
 `;
 
 
@@ -79,11 +88,16 @@ const Row = styled.div`
     align-items: center;
     width: 100%;
    
+    ${mobile({
+        flexDirection: 'column',
+        gap: "1em"
+    })}
 `;
 const CTA = styled.h1`
     font-size: 4em;
 `;
-const Header = styled.h2``;
+const Header = styled.h2`
+text-align: center;`;
 const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();

@@ -19,16 +19,20 @@ ${PC({
 overflow: hidden;
 transition: all 0.5s ease;
 
-& .left{
-    margin-left: -100px;
-}
+@media only screen and (min-width: 1200px) {
+    & .left{
+        margin-left: -100px;
+    }
+    
+    & .right{
+        margin-right: -100px;
+    }
+  }
 
-& .right{
-    margin-right: -100px;
-}
 ${mobile({
     flexDirection: "column",
-    margin: "0"
+    margin: "0",
+    
  })}
 
 ${Medium({
@@ -54,6 +58,12 @@ ${PC({
     margin: "1.5em",
     jusifyContent: "space-between"
  })}
+ ${mobile({
+    width: "80%"
+ })}
+ ${Medium({
+    width: "80%"
+ })}
 `;
 const Image = styled.img`width: 100%`;
 const Title = styled.h1`
@@ -64,11 +74,17 @@ font-size: 2.25em;
 const Description = styled.p`
 
 
-${PC({
-    padding: "0 2em"
-    
+${mobile({
+    padding: "0 2em",
+    width: "85%"
  })}
+ ${Medium({
+    padding: "0 2em",
+    width: "65%",
     
+ })}    
+
+ 
 `;
 const Technologies = styled.p`
     font-size: 1.75em;
