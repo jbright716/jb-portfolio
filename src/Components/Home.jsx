@@ -3,7 +3,7 @@ import { LinkedIn, GitHub } from '@mui/icons-material';
 import React from 'react'
 import styled from 'styled-components';
 import img from '../Assets/cityCombined.jpg';
-import {PC, Medium} from '../responsive';
+import {PC, Medium,Large} from '../responsive';
 
 const Container = styled.div`
     position: relative;
@@ -12,7 +12,7 @@ const Container = styled.div`
     background-position: center;
     background-size: cover;
     position: relative;
-   
+    
 `;
 
 const Wrapper = styled.div`
@@ -34,6 +34,10 @@ ${Medium({
 ${PC({
   fontSize: "7.5em"
 })}
+
+${Large({
+  fontSize: "8em"
+})}
 `;
 const Description = styled.p`
 font-size: 1.75em;
@@ -43,6 +47,10 @@ ${Medium({
  })}
 ${PC({
   fontSize: "2.5em"
+})}
+
+${Large({
+  fontSize: "3em"
 })}
 `;
 

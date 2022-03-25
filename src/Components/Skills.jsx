@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import img from '../Assets/Jbrightski.png';
 import {tech} from '../JSFiles/technology';
 import resume from '../Assets/JusticeBrightResume.pdf';
-import {PC, Medium,mobile} from '../responsive';
+import {PC, Medium,mobile, Large} from '../responsive';
 
 const Container = styled.div`
     padding: 1em 0;
@@ -30,17 +30,26 @@ const Title = styled.h1`
   ${PC({
     fontSize: "5em"
   })}
+
+  ${Large({
+    fontSize: "6em"
+  })}
     
 `;
 const Description = styled.p`
     font-size: 1.25em;
-  
+    
     ${mobile({
       width: "85vw"
       })}
     ${Medium({
       width: "50vw"
       })}
+
+    ${Large({
+        width: "57rem",
+        fontSize: "1.3em"
+        })}
 `;
 
 const Wrapper = styled.div`

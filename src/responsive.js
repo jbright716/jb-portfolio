@@ -20,7 +20,16 @@ export const Medium = (props) => {
 
 export const PC = (props) => {
     return css`
-    @media only screen and (min-width: 1201px) {
+    @media only screen and (min-width: 1201px) and (max-width:1500px) {
+        ${props}
+    }
+    `;
+
+};
+
+export const Large = (props) => {
+    return css`
+    @media only screen and (min-width: 1501px) {
         ${props}
     }
     `;

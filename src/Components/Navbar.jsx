@@ -1,7 +1,7 @@
 import { Close, MenuSharp } from '@mui/icons-material';
 import React, {useState} from 'react';
 import styled from 'styled-components';
-import {PC, Medium, mobile} from '../responsive';
+import {PC, Medium, mobile, Large} from '../responsive';
 
 
 const Container = styled.div`
@@ -37,6 +37,9 @@ ${PC({
     padding: "0.5em 4em"
   })}
 
+  ${Large({
+    padding: "0.75em 4em"
+  })}
 
 `;
 const Right = styled.div`
@@ -65,6 +68,9 @@ ${mobile({
     transform: "none"
   })}
 
+  ${Large({
+    transform: "none"
+  })}
   ${Medium({
     transform: "none"
   })}
@@ -83,6 +89,11 @@ ${PC({
     FontSize: "1.75em",
     
   })}
+
+  ${Large({
+    FontSize: "2.25em",
+    
+  })}
 `; 
 const TabList = styled.ul`
 display: flex;
@@ -97,6 +108,12 @@ ${Medium({
 ${PC({
     flexDirection: "row",
     gap: "3em"
+    
+  })}
+
+  ${Large({
+    flexDirection: "row",
+    gap: "3.5em"
     
   })}
 `;

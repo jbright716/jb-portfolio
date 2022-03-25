@@ -8,6 +8,10 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+  background: #152039;
 `;
 function App() {
   return (

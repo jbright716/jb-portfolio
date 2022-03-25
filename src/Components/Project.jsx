@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import styled from 'styled-components';
 import Modal from './Modal';
-import {PC, Medium, mobile} from '../responsive';
+import {PC, Medium, mobile, Large} from '../responsive';
 const Container = styled.div`
 
 display: flex;
@@ -58,6 +58,10 @@ ${PC({
     margin: "1.5em",
     jusifyContent: "space-between"
  })}
+ ${Large({
+    margin: "1.5em",
+    jusifyContent: "space-between"
+ })}
  ${mobile({
     width: "80%"
  })}
@@ -83,7 +87,11 @@ ${mobile({
     width: "65%",
     
  })}    
-
+ ${Large({
+    padding: "0 2em",
+    width: "85%",
+    
+ })} 
  
 `;
 const Technologies = styled.p`

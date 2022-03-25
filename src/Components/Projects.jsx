@@ -3,7 +3,7 @@ import React from 'react'
 import styled from 'styled-components';
 import {projects} from '../JSFiles/projectDetails.js'
 import Project from './Project';
-import {PC, Medium} from '../responsive';
+import {PC, Medium,Large} from '../responsive';
 const Container = styled.div`
     background: #152039;
     color: #fff;
@@ -19,11 +19,14 @@ const Title = styled.h1`
   ${PC({
     fontSize: "5em"
   })}
+  ${Large({
+    fontSize: "6em"
+  })}
 `;
 const List = styled.div`
 display: flex;
 flex-direction: column;
-
+gap: 2em;
 `;
 
 const Wrapper = styled.div`

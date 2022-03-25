@@ -1,7 +1,7 @@
 import React from 'react';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
-import {PC, Medium, mobile} from '../responsive';
+import {PC,  mobile, Large} from '../responsive';
 
 const Container = styled.div`
 background: #152039;
@@ -35,6 +35,10 @@ const Form = styled.form`
     border-color: white;
      
     ${PC({
+        width: "50%"
+    })}
+
+    ${Large({
         width: "50%"
     })}
 `;
