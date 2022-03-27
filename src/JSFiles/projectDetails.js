@@ -1,3 +1,4 @@
+
 export const projects = [
     {
         id: '1',
@@ -7,8 +8,10 @@ export const projects = [
         show: true,
         technologies: "JavaFx, Java, Css",
         repo: "https://github.com/jbright716/Virtual-Casino-",
-        demo: "https://i.imgur.com/QRTcYWA.png",
-        linked: false
+        demo: 'https://i.imgur.com/hYuzzaX.gif',
+        linked: false,
+        show: false,
+
     },
     {
         id: '2',
