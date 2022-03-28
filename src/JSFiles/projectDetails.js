@@ -16,19 +16,19 @@ export const projects = [
     {
         id: '2',
         title: "VulgarTG",
-        description: "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more. *Live Site Not Currently Lauched*",
+        description: "An e-commerce website for the Vulgar clothing brand created to handle all transactions. Customers can browse all products with the capability of adding items to their cart and saving their favorites. Products can be searched and sorted to find specific products or product types.  A provides customers with all business related information (company policies, customer support, etc.). *Live Site Not Currently Launched*",
         button: "View Site",
         show: true,
         technologies: "React, Node, Express, PostgreSQL",
         repo: "https://github.com/jbright716/VulgarTG",
-        demo: "https://i.imgur.com/aIwDiXL.png",
+        demo: "https://cdn.kapwing.com/final_6240e6365f0fce0085978e70_786938.gif",
         linked: true,
         link: "https://vulgartg.com"
     },
     {
         id: '3',
-        title: "Social Media Backend",
-        description: "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
+        title: "Social Media Api",
+        description: "Backend framework for a potential social media website. Api enables users to register an account, create edit and delete posts, along with viewing the posts of other users. User profiles display their experiences, education and skills.",
         button: "none",
         show: false,
         technologies: "Node, Express, MongoDB",
@@ -38,7 +38,7 @@ export const projects = [
     {
         id: '4',
         title: "Personal Portfolio",
-        description: "A personal website for",
+        description: "A single page website to display projects and allow individuals a way to contact me. Features an embedded messaging form that is directly connected to my email address",
         button: "View Site",
         show: true,
         technologies: "React, HTML, CSS",

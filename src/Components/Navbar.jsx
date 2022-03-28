@@ -78,7 +78,12 @@ ${mobile({
 
 `;
 const Left = styled.div`
-font-size: 1em;
+FontSize: 1em;
+
+& a{
+  text-decoration: none;
+}
+
 
 ${Medium({
     FontSize: "1.75em",
@@ -141,7 +146,9 @@ ${mobile({
   })}
   `;
 
-
+const Logo = styled.img`
+  width: 50px;
+`;
 
 const Navbar = () => {
     const [navbar,setNavbar] = useState(false);
@@ -161,7 +168,7 @@ const Navbar = () => {
     <Container bg = {navbar? '#DE887A' : 'none'} >
         
     <Wrapper>
-        <Left>JB</Left>
+        <Left><a href= "#Home">JB</a></Left>
         <MenuIcon><MenuSharp style={{ fontSize: 35 }}  onClick= {() => {setShowNav(prev => !prev)}}/></MenuIcon>
         <Right showing = {ShowNav? 'flex' : 'none'} sliding = {ShowNav? 'translateX(0)' :'translateX(100%)'}>
            
