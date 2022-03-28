@@ -5,7 +5,6 @@ export const projects = [
         title: "Virtual Casino",
         description: "A desktop app for developing and testing gambling strategies. Featured Tables Games (BlackJack, Roulette and Poker), a Slot Machine, and a balance tracking system. Developed tracking system for players statistics used to analyze betting strategies.",
         button: "View Demo",
-        show: true,
         technologies: "JavaFx, Java, Css",
         repo: "https://github.com/jbright716/Virtual-Casino-",
         demo: 'https://i.imgur.com/hYuzzaX.gif',
@@ -16,7 +15,7 @@ export const projects = [
     {
         id: '2',
         title: "VulgarTG",
-        description: "An e-commerce website for the Vulgar clothing brand created to handle all transactions. Customers can browse all products with the capability of adding items to their cart and saving their favorites. Products can be searched and sorted to find specific products or product types.  A provides customers with all business related information (company policies, customer support, etc.). *Live Site Not Currently Launched*",
+        description: "An e-commerce website for the Vulgar clothing brand created to handle all transactions. Customers can browse all products with the capability of adding items to their cart and saving their favorites. Products can be searched and sorted to find specific products or product types.  A provides customers with all business related information (company policies, customer support, etc.) *Live Site Not Currently Launched*",
         button: "View Site",
         show: true,
         technologies: "React, Node, Express, PostgreSQL",
