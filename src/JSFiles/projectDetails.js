@@ -20,7 +20,7 @@ export const projects = [
         show: true,
         technologies: "React, Node, Express, PostgreSQL",
         repo: "https://github.com/jbright716/VulgarTG",
-        demo: "https://cdn.kapwing.com/final_6240e6365f0fce0085978e70_786938.gif",
+        demo: "https://i.imgur.com/PI6PrJy.gif",
         linked: true,
         link: "https://vulgartg.com"
     },
