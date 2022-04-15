@@ -18,7 +18,7 @@ const Section = styled.section`
     transform: translate(-50%,-50%);
 `;
 const Content = styled.img``;
-const Modal = ({content, showModal, setShowModal}) => {
+const Modal = ({ showModal, setShowModal}) => {
    
     return (
        <>
@@ -26,7 +26,6 @@ const Modal = ({content, showModal, setShowModal}) => {
       <Wrapper>
         <Section showModal = {showModal}>
           
-         
           <button type="button" onClick= {() => { setShowModal(prev => !prev)}}>
             Close
           </button>
